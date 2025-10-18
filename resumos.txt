@@ -1,0 +1,22 @@
+
+
+CASTING
+
+
+1. String ↔ int
+Conversão	
+String → int	int.parse("123")	Erro se a String não for número válido
+int → String	123.toString()	Sempre funciona
+🔹 2. String ↔ double
+Conversão	
+String → double	double.parse("1.75")	Erro se a String não for número válido
+double → String	1.75.toString()	Sempre funciona
+🔹 3. int ↔ double
+Conversão	
+int → double	10.toDouble()
+double → int	10.5.toInt() (arredonda para baixo)
+🔹 4. Object ↔ tipo específico (as, is)
+Object valor = "Iago";
+
+// Usando 'as' para cast
+String nome = valor as String; 
